@@ -1,4 +1,4 @@
-#RACK API based on API design in Node.js with Express, v3
+# RACK API based on API design in Node.js with Express, v3
 
 > Scott Moss & Frontend Masters
 
