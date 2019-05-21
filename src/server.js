@@ -1,4 +1,5 @@
 import express from 'express'
+import path from 'path'
 import { json, urlencoded } from 'body-parser'
 import morgan from 'morgan'
 import config from './config'
@@ -17,6 +18,10 @@ app.use(cors())
 app.use(json())
 app.use(urlencoded({ extended: true }))
 app.use(morgan('dev'))
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/index.html'))
+})
 
 app.post('/signup', signup)
 app.post('/signin', signin)
