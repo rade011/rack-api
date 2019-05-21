@@ -66,5 +66,8 @@
   },
   "keywords": [],
   "author": "Rade011",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "10.x"
+  }
 }
